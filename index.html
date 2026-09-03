@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday Betu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sky"></div>
+<div class="screen-bg" id="screenBg"></div>
+<div class="stars" id="stars"></div>
+<div class="hearts-field" id="heartsField"></div>
+
+<!-- ===================== BOTTOM DOCK NAV ===================== -->
+<nav class="dock" id="dock">
+  <button class="dock-btn active" data-screen="home" title="Home">🏠</button>
+  <button class="dock-btn" data-screen="letter" title="My Letter">💌</button>
+  <button class="dock-btn" data-screen="stats" title="Us, By The Numbers">📊</button>
+  <button class="dock-btn" data-screen="cake" title="Make A Wish">🎂</button>
+  <button class="dock-btn" data-screen="hearts" title="Pop Hearts">💕</button>
+  <button class="dock-btn" data-screen="wheel" title="Why I Love You">🎡</button>
+  <button class="dock-btn" data-screen="mood" title="Mood Meter">🌩️</button>
+</nav>
+
+<main class="stage">
+
+  <!-- ===================== HOME ===================== -->
+  <section class="screen active" id="screen-home">
+    <div class="confetti-burst" id="topBurst"></div>
+    <h1 class="mega-title">Happy Birthday,<br><span class="name-pop" id="namePop" title="psst, tap me">Betu</span> 🎉</h1>
+    <p class="home-sub">okay so. I didn't want to just text you "hbd" like a normal person, so I built you an entire little website instead. no big deal. totally normal boyfriend behaviour.</p>
+
+    <div class="menu-grid">
+      <button class="menu-card" data-screen="letter">
+        <span class="menu-emoji">💌</span>
+        <span class="menu-label">Read My Letter</span>
+      </button>
+      <button class="menu-card" data-screen="stats">
+        <span class="menu-emoji">📊</span>
+        <span class="menu-label">Us, By The Numbers</span>
+      </button>
+      <button class="menu-card" data-screen="cake">
+        <span class="menu-emoji">🎂</span>
+        <span class="menu-label">Make A Wish</span>
+      </button>
+      <button class="menu-card" data-screen="hearts">
+        <span class="menu-emoji">💕</span>
+        <span class="menu-label">Pop Some Hearts</span>
+      </button>
+      <button class="menu-card" data-screen="wheel">
+        <span class="menu-emoji">🎡</span>
+        <span class="menu-label">Why I Love You</span>
+      </button>
+      <button class="menu-card" data-screen="mood">
+        <span class="menu-emoji">🌩️</span>
+        <span class="menu-label">The Betu Mood Meter™</span>
+      </button>
+    </div>
+
+    <p class="home-footer">happy birthday to the girl who remembers everything, edits like a queen, and somehow still chose me. i love you, betu 🤍</p>
+    <button class="villain-btn" id="villainBtn">🤫 psst, don't click this</button>
+    <p class="villain-reveal" id="villainReveal">
+      Kanishka and Bhumi have never met. They didn't need to — the universe only made one prototype for "insufferable senior" and issued it twice, once to each of us. We are building a case.
+    </p>
+  </section>
+
+  <!-- ===================== LETTER ===================== -->
+  <section class="screen" id="screen-letter">
+    <h2 class="screen-title">A Letter, Sort Of 💌</h2>
+    <p class="screen-sub">less of a letter, more like a bunch of sticky notes I couldn't stop writing</p>
+    <div class="notes-wrap" id="notesWrap">
+      <div class="note note-1">so. finally. you're entering your 20s. a whole new decade, and you're spending the start of it with the same chaotic disaster who fell for a random birthday DM last year. I hope this one gives you everything you deserve, which, fair warning, is a lot, because you're kind of a big deal.</div>
+      <div class="note note-1b">also — your birthday lines up with Janmashtami this year. Kanha ji sharing his day with you? correct choice, universe.</div>
+      <div class="note note-2">Tum ho toh subaha nayi hai
+Tum ho toh shaamein haseen hain
+Ek duniya sapnon si... hai...
+Tum ho toh iss pe yakeen hai</div>
+      <div class="note note-2b">I loveee youuu for ever and ever and ever and ever my vaaniiiii my lovie doviee</div>
+      <div class="note note-3">you ragebait me, I ragebait you back, your mood does a full 180 in about four seconds, and somehow — every single time — we end up right back here, disgustingly soft. wouldn't trade the chaos for anything.</div>
+      <div class="note note-promise">every promise between us somehow turns into a "pinky promise," or you mishearing it as "pinkish promise" every single time. I've stopped correcting you. it's cuter this way.</div>
+      <div class="note note-5">we haven't even met in person yet and I already know I want the "forever" version of this. I told you once — if two people consider each other husband and wife with their whole heart, that counts as married already. by that logic, Vaani, we've been married a while now.</div>
+      <div class="note note-6">@queen_advani loves @kiaracxfilms forever, that's a permanent collab.</div>
+      <div class="note note-7 signoff">happy birthday, Vaani. — your Krish (aka Pinkesh), still choosing you, every single time 🤍</div>
+    </div>
+    <button class="secret-btn" id="secretClipBtn">okay one more thing 👀</button>
+    <div class="secret-clip" id="secretClip">
+      <video autoplay loop muted playsinline src="assets/video/marry-me.mp4"></video>
+      <p>...no reason. just saying. carry on.</p>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="screen" id="screen-stats">
+    <h2 class="screen-title">Us, By The Numbers 📊</h2>
+    <p class="screen-sub">pulled straight from our actual Telegram chat — since 29 May, which is exactly one year to the day after you first wished me happy birthday. make it make sense.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card big">
+        <span class="stat-number" data-count="38298">0</span>
+        <span class="stat-label">messages exchanged. we have a problem.</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-count="22439">0</span>
+        <span class="stat-label">from you</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-count="15859">0</span>
+        <span class="stat-label">from me</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-count="68">0</span>
+        <span class="stat-label">day streak, still unbroken as of today</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-count="1662">0</span>
+        <span class="stat-label">texts in one single day (30 Aug). we genuinely need hobbies.</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-count="713">0</span>
+        <span class="stat-label">times "I love you" got said — "iloveyouuuuu"s included, we counted properly</span>
+      </div>
+      <div class="stat-card wide">
+        <span class="stat-label"><strong>45</strong> hugs and <strong>317</strong> "muah"s sent through a screen. still not enough, but we're trying.</span>
+      </div>
+      <div class="stat-card wide">
+        <span class="stat-label">you've been called "Betu" <strong>189</strong> times, "bacchu" <strong>120</strong> times, and "jaan" <strong>64</strong> times in this chat alone. your actual name is apparently optional.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAKE GAME ===================== -->
+  <section class="screen" id="screen-cake">
+    <h2 class="screen-title">Make A Wish 🎂</h2>
+    <p class="screen-sub" id="cakeInstruction">tap every candle to blow it out</p>
+    <div class="cake-wrap">
+      <div class="cake">
+        <div class="candles" id="candles">
+          <button class="candle c1" data-lit="1"><span class="flame"><span class="flame-glow"></span></span><span class="wick"></span><span class="stick"></span></button>
+          <button class="candle c2" data-lit="1"><span class="flame"><span class="flame-glow"></span></span><span class="wick"></span><span class="stick"></span></button>
+          <button class="candle c3" data-lit="1"><span class="flame"><span class="flame-glow"></span></span><span class="wick"></span><span class="stick"></span></button>
+          <button class="candle c4" data-lit="1"><span class="flame"><span class="flame-glow"></span></span><span class="wick"></span><span class="stick"></span></button>
+          <button class="candle c5" data-lit="1"><span class="flame"><span class="flame-glow"></span></span><span class="wick"></span><span class="stick"></span></button>
+        </div>
+        <div class="cake-tiers">
+          <div class="tier tier-top"><span class="drip d1"></span><span class="drip d2"></span><span class="drip d3"></span></div>
+          <div class="tier tier-mid"><span class="sprinkle s1"></span><span class="sprinkle s2"></span><span class="sprinkle s3"></span><span class="sprinkle s4"></span></div>
+          <div class="tier tier-base"></div>
+          <div class="plate"></div>
+        </div>
+      </div>
+    </div>
+    <div class="cake-message" id="cakeMessage">
+      <p>wish made. I already know it's coming true, because I'm going to be very annoying about it. happy birthday, Betu 🥹</p>
+    </div>
+  </section>
+
+  <!-- ===================== HEART POP GAME ===================== -->
+  <section class="screen" id="screen-hearts">
+    <h2 class="screen-title">Pop Some Hearts 💕</h2>
+    <p class="screen-sub">tap the hearts. very high stakes. very important.</p>
+    <div class="heart-score">popped: <span id="heartScore">0</span> / 25</div>
+    <div class="heart-game" id="heartGame"></div>
+    <div class="heart-win" id="heartWin">
+      <p>okay you actually did it. 25 hearts popped, one Betu still adored. happy birthday 💗</p>
+    </div>
+  </section>
+
+  <!-- ===================== WHY I LOVE YOU WHEEL ===================== -->
+  <section class="screen" id="screen-wheel">
+    <h2 class="screen-title">Why I Love You 🎡</h2>
+    <p class="screen-sub">tap a card. flip it. that's the game.</p>
+    <div class="flip-grid" id="flipGrid">
+      <div class="flip-card"><div class="flip-inner"><div class="flip-front">?</div><div class="flip-back">I love your craziness. Somehow, even your most chaotic side feels like home to me.</div></div></div>
+      <div class="flip-card"><div class="flip-inner"><div class="flip-front">?</div><div class="flip-back">Your yapping has this weird little magic to it. Somehow, listening to you talk about everything and nothing gives me peace.</div></div></div>
+      <div class="flip-card"><div class="flip-inner"><div class="flip-front">?</div><div class="flip-back">I’ve gotten so used to you that I don’t even have to think to understand you anymore. You’re just there, somewhere in the back of my mind, like a permanent part of me.</div></div></div>
+      <div class="flip-card"><div class="flip-inner"><div class="flip-front">?</div><div class="flip-back">I love that you make me want to become a better version of myself. You didn’t change me, you made me better.</div></div></div>
+      <div class="flip-card"><div class="flip-inner"><div class="flip-front">?</div><div class="flip-back">I love that with you, even the most ordinary moments somehow become something I want to remember.</div></div></div>
+      <div class="flip-card"><div class="flip-inner"><div class="flip-front">?</div><div class="flip-back">I love seeing how hard you work for the things you want. Watching you grow and become better makes me genuinely proud of you.</div></div></div>
+      <div class="flip-card"><div class="flip-inner"><div class="flip-front">?</div><div class="flip-back">I love that no matter how much time passes, there’s still this little part of me that gets ridiculously happy just because it’s you on the other side of the screen. ❤️</div></div></div>
+      <div class="flip-card"><div class="flip-inner"><div class="flip-front">?</div><div class="flip-back">I love how you can be both the most sensible person in the room and the biggest little kid five minutes later. That contrast is one of my favourite things about you.</div></div></div>
+      <div class="flip-card"><div class="flip-inner"><div class="flip-front">?</div><div class="flip-back">I love that we’re each other’s biggest cheerleaders. I want to see you achieve everything you dream of, and I want to be right there cheering for you.</div></div></div>
+    </div>
+  </section>
+
+  <!-- ===================== MOOD METER ===================== -->
+  <section class="screen" id="screen-mood">
+    <h2 class="screen-title">The Betu Mood Meter™ 🌩️</h2>
+    <p class="screen-sub">drag it. you know exactly how this cycle goes.</p>
+    <div class="mood-meter-wrap">
+      <div class="mood-face" id="moodFace">🌩️</div>
+      <input type="range" min="0" max="100" value="0" id="moodSlider" class="mood-slider">
+      <div class="mood-labels">
+        <span>ragebait</span>
+        <span>sulking</span>
+        <span>cooling down</span>
+        <span>lovie dovie</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

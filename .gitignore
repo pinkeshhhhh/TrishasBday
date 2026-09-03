@@ -1,0 +1,14 @@
+PROJECT_BRIEF.md
+
+# original uncompressed source images (2-2.5MB each) -- the site only uses
+# the compressed versions in assets/backgrounds/, keep these out of the repo
+assets/bg1.png
+assets/bg2.png
+assets/bg3.png
+assets/bg4.png
+assets/bg5.png
+assets/bg6.png
+assets/bg7.png
+
+# empty placeholder dir from early scaffolding, unused
+data/
